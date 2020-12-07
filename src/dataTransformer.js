@@ -108,9 +108,10 @@ for (let i = 0; i < parsed10secData.length + 12; i += 12) {
     })
 }
 
-console.log({ parsed10secData, parsed20secData, parsed30secData, parsed1minData, parsed2minData })
-
 export {
+    YEAR,
+    MONTH,
+    DAY,
     data as rawData,
     parsed10secData,
     parsed20secData,
