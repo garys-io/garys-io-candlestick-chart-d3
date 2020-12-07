@@ -1,12 +1,16 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { select, scaleTime, scaleLinear, min, max, axisBottom, axisLeft } from 'd3'
 
-import { parsed1minData, YEAR, MONTH, DAY } from './dataTransformer'
+import { timedelta, YEAR, MONTH, DAY } from './dataTransformer'
+
+const defaultInterval = '1 minute'
 
 function App() {
     const svgRef = useRef()
 
-    const data = parsed1minData
+    const [interval, setInterval] = useState(defaultInterval)
+
+    const data = timedelta[interval]
     const width = 1920
     const height = 1080
     const margin = 50
@@ -56,6 +60,20 @@ function App() {
     return (
         <>
             <svg ref={svgRef} width={width} height={height}></svg>
+            <div>
+                <label htmlFor="timedelta">Choose Timedelata:</label>
+                <select
+                    id="timedelta"
+                    onChange={e => setInterval(e.target.value)}
+                    defaultValue={defaultInterval}
+                >
+                    {Object.keys(timedelta).map(key => (
+                        <option value={key} key={key}>
+                            {key}
+                        </option>
+                    ))}
+                </select>
+            </div>
         </>
     )
 }

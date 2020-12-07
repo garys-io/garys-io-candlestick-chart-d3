@@ -108,14 +108,12 @@ for (let i = 0; i < parsed10secData.length + 12; i += 12) {
     })
 }
 
-export {
-    YEAR,
-    MONTH,
-    DAY,
-    data as rawData,
-    parsed10secData,
-    parsed20secData,
-    parsed30secData,
-    parsed1minData,
-    parsed2minData,
+const timedelta = {
+    '10 second': parsed10secData,
+    '20 second': parsed20secData,
+    '30 second': parsed30secData,
+    '1 minute': parsed1minData,
+    '2 minute': parsed2minData,
 }
+
+export { YEAR, MONTH, DAY, data as rawData, timedelta }
