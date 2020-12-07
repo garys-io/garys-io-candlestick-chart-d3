@@ -1,5 +1,7 @@
 # Candlestick chart using React.js and d3.js
 
+![Preview](https://github.com/garys-io/garys-io-candlestick-chart-d3/blob/main/preview.png)
+
 ## Click on the following links to go to
 
 - [Live preview](https://garys-io.github.io/garys-io-candlestick-chart-d3/)
