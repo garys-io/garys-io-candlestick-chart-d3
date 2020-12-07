@@ -47,6 +47,33 @@ const chartRenderer = props => {
                     y(Math.max(d.open, d.close)) + margin
                 })`
         )
+        .on('mouseover', (e, d) => {
+            const keys = Object.keys(d)
+
+            // box to contain tooltip
+            svg.append('rect')
+                .attr('id', 'tooltip-react')
+                .attr('x', e.x)
+                .attr('y', e.y)
+                .attr('width', 375)
+                .attr('height', keys.length * 33)
+                .attr('fill', 'white')
+
+            keys.map((key, i) =>
+                svg
+                    .append('text')
+                    .attr('id', `tooltip-${key}`)
+                    .attr('x', e.x + 30)
+                    .attr('y', e.y + 30 + 30 * i)
+                    .attr('font-size', '25px')
+                    .attr('fill', 'darkgrey')
+                    .text(`${key}: ${d[key]}`)
+            )
+        })
+        .on('mouseout', (e, d) => {
+            select('#tooltip-react').remove()
+            Object.keys(d).map(key => select(`#tooltip-${key}`).remove())
+        })
 }
 
 export { chartRenderer }

@@ -42,7 +42,7 @@ function App() {
             margin,
             data,
             fromTime,
-            toTime
+            toTime,
         })
     }, [data])
 
@@ -54,42 +54,48 @@ function App() {
                 <g id="graph"></g>
             </svg>
             <div>
-                <label htmlFor="timedelta">Choose Timedelata:</label>
-                <select
-                    id="timedelta"
-                    onChange={e => setInterval(e.target.value)}
-                    defaultValue={defaultInterval}
-                >
-                    {Object.keys(timedelta).map(key => (
-                        <option value={key} key={key}>
-                            {key}
-                        </option>
-                    ))}
-                </select>
-                <label htmlFor="form-time">Choose from time:</label>
-                <select
-                    id="form-time"
-                    onChange={e => setFromTime(new Date(e.target.value))}
-                    defaultValue={defaultFromTime}
-                >
-                    {dateOptions.map(date => (
-                        <option value={date.toISOString()} key={date.toISOString()}>
-                            {date.toLocaleTimeString()}
-                        </option>
-                    ))}
-                </select>
-                <label htmlFor="to-time">Choose to time:</label>
-                <select
-                    id="to-time"
-                    onChange={e => setToTime(new Date(e.target.value))}
-                    defaultValue={defaultToTime}
-                >
-                    {dateOptions.map(date => (
-                        <option value={date.toISOString()} key={date.toISOString()}>
-                            {date.toLocaleTimeString()}
-                        </option>
-                    ))}
-                </select>
+                <span>
+                    <label htmlFor="timedelta">Choose Timedelata:</label>
+                    <select
+                        id="timedelta"
+                        onChange={e => setInterval(e.target.value)}
+                        defaultValue={defaultInterval}
+                    >
+                        {Object.keys(timedelta).map(key => (
+                            <option value={key} key={key}>
+                                {key}
+                            </option>
+                        ))}
+                    </select>
+                </span>
+                <span>
+                    <label htmlFor="form-time">Choose from time:</label>
+                    <select
+                        id="form-time"
+                        onChange={e => setFromTime(new Date(e.target.value))}
+                        defaultValue={defaultFromTime}
+                    >
+                        {dateOptions.map(date => (
+                            <option value={date.toISOString()} key={date.toISOString()}>
+                                {date.toLocaleTimeString()}
+                            </option>
+                        ))}
+                    </select>
+                </span>
+                <span>
+                    <label htmlFor="to-time">Choose to time:</label>
+                    <select
+                        id="to-time"
+                        onChange={e => setToTime(new Date(e.target.value))}
+                        defaultValue={defaultToTime}
+                    >
+                        {dateOptions.map(date => (
+                            <option value={date.toISOString()} key={date.toISOString()}>
+                                {date.toLocaleTimeString()}
+                            </option>
+                        ))}
+                    </select>
+                </span>
             </div>
         </>
     )
