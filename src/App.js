@@ -57,7 +57,7 @@ function App() {
                 <span>
                     <label htmlFor="interval">Interval:</label>
                     <select
-                        id="interval"I
+                        id="interval"
                         onChange={e => setInterval(e.target.value)}
                         defaultValue={defaultInterval}
                     >
@@ -73,7 +73,7 @@ function App() {
                     <select
                         id="form-time"
                         onChange={e => setFromTime(new Date(e.target.value))}
-                        defaultValue={defaultFromTime}
+                        defaultValue={defaultFromTime.toISOString()}
                     >
                         {dateOptions.map(date => (
                             <option value={date.toISOString()} key={date.toISOString()}>
@@ -87,7 +87,7 @@ function App() {
                     <select
                         id="to-time"
                         onChange={e => setToTime(new Date(e.target.value))}
-                        defaultValue={defaultToTime}
+                        defaultValue={defaultToTime.toISOString()}
                     >
                         {dateOptions.map(date => (
                             <option value={date.toISOString()} key={date.toISOString()}>
