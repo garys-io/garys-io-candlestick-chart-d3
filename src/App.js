@@ -21,7 +21,7 @@ function App() {
 
         const y = scaleLinear()
             .domain([min(data.map(x => x.low)), max(data.map(x => x.high))])
-            .range([0, height - 2 * margin])
+            .range([height - 2 * margin, 0])
 
         const xAxis = axisBottom(x)
         const yAxis = axisLeft(y)
@@ -51,7 +51,7 @@ function App() {
             .attr('y2', d => y(d.close))
             .attr('stroke-width', candleWidth)
             .attr('stroke', d => (d.open > d.close ? 'red' : 'green'))
-    }, [])
+    }, [data, candleWidth])
 
     return (
         <>
