@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/candlestick-chart-d3/static/css/main.bf2a2dcd.chunk.css",
-    "main.js": "/candlestick-chart-d3/static/js/main.f96c7a40.chunk.js",
-    "main.js.map": "/candlestick-chart-d3/static/js/main.f96c7a40.chunk.js.map",
-    "runtime-main.js": "/candlestick-chart-d3/static/js/runtime-main.429db664.js",
-    "runtime-main.js.map": "/candlestick-chart-d3/static/js/runtime-main.429db664.js.map",
-    "static/js/2.93b71b59.chunk.js": "/candlestick-chart-d3/static/js/2.93b71b59.chunk.js",
-    "static/js/2.93b71b59.chunk.js.map": "/candlestick-chart-d3/static/js/2.93b71b59.chunk.js.map",
-    "static/js/3.07612615.chunk.js": "/candlestick-chart-d3/static/js/3.07612615.chunk.js",
-    "static/js/3.07612615.chunk.js.map": "/candlestick-chart-d3/static/js/3.07612615.chunk.js.map",
-    "index.html": "/candlestick-chart-d3/index.html",
-    "static/css/main.bf2a2dcd.chunk.css.map": "/candlestick-chart-d3/static/css/main.bf2a2dcd.chunk.css.map",
-    "static/js/2.93b71b59.chunk.js.LICENSE.txt": "/candlestick-chart-d3/static/js/2.93b71b59.chunk.js.LICENSE.txt"
+    "main.css": "/garys-io-candlestick-chart-d3/static/css/main.bf2a2dcd.chunk.css",
+    "main.js": "/garys-io-candlestick-chart-d3/static/js/main.3110ba33.chunk.js",
+    "main.js.map": "/garys-io-candlestick-chart-d3/static/js/main.3110ba33.chunk.js.map",
+    "runtime-main.js": "/garys-io-candlestick-chart-d3/static/js/runtime-main.1f3831e9.js",
+    "runtime-main.js.map": "/garys-io-candlestick-chart-d3/static/js/runtime-main.1f3831e9.js.map",
+    "static/js/2.93b71b59.chunk.js": "/garys-io-candlestick-chart-d3/static/js/2.93b71b59.chunk.js",
+    "static/js/2.93b71b59.chunk.js.map": "/garys-io-candlestick-chart-d3/static/js/2.93b71b59.chunk.js.map",
+    "static/js/3.07612615.chunk.js": "/garys-io-candlestick-chart-d3/static/js/3.07612615.chunk.js",
+    "static/js/3.07612615.chunk.js.map": "/garys-io-candlestick-chart-d3/static/js/3.07612615.chunk.js.map",
+    "index.html": "/garys-io-candlestick-chart-d3/index.html",
+    "static/css/main.bf2a2dcd.chunk.css.map": "/garys-io-candlestick-chart-d3/static/css/main.bf2a2dcd.chunk.css.map",
+    "static/js/2.93b71b59.chunk.js.LICENSE.txt": "/garys-io-candlestick-chart-d3/static/js/2.93b71b59.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.429db664.js",
+    "static/js/runtime-main.1f3831e9.js",
     "static/js/2.93b71b59.chunk.js",
     "static/css/main.bf2a2dcd.chunk.css",
-    "static/js/main.f96c7a40.chunk.js"
+    "static/js/main.3110ba33.chunk.js"
   ]
 }
