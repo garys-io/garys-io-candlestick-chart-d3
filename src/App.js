@@ -22,9 +22,9 @@ const dateOptions = [
     new Date(YEAR, MONTH, DAY, 15, 30),
     new Date(YEAR, MONTH, DAY, 16, 0),
 ]
-const width = 1920
-const height = 1080
 const margin = 50
+const width = 1920 - 2 * margin
+const height = 1080 - 2 * margin
 
 function App() {
     const svgRef = useRef()
@@ -53,11 +53,11 @@ function App() {
                 <g id="y-axis"></g>
                 <g id="graph"></g>
             </svg>
-            <div>
+            <div id='user-inputs'>
                 <span>
-                    <label htmlFor="timedelta">Choose Timedelata:</label>
+                    <label htmlFor="interval">Interval:</label>
                     <select
-                        id="timedelta"
+                        id="interval"I
                         onChange={e => setInterval(e.target.value)}
                         defaultValue={defaultInterval}
                     >
@@ -69,7 +69,7 @@ function App() {
                     </select>
                 </span>
                 <span>
-                    <label htmlFor="form-time">Choose from time:</label>
+                    <label htmlFor="form-time">From:</label>
                     <select
                         id="form-time"
                         onChange={e => setFromTime(new Date(e.target.value))}
@@ -83,7 +83,7 @@ function App() {
                     </select>
                 </span>
                 <span>
-                    <label htmlFor="to-time">Choose to time:</label>
+                    <label htmlFor="to-time">To:</label>
                     <select
                         id="to-time"
                         onChange={e => setToTime(new Date(e.target.value))}

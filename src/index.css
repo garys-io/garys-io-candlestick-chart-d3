@@ -9,3 +9,17 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+label, select {
+    font-size: 25px;
+}
+
+#user-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+label {
+    margin-right: 30px;
+}
